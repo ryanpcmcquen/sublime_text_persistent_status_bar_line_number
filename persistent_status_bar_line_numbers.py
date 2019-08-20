@@ -10,4 +10,4 @@ class PersistentStatusBarLineNumbers(sublime_plugin.EventListener):
         current_line_number = view.rowcol(
             view.sel()[0].begin()
         )[0] + 1
-        view.set_status('persistent_line_number', current_line_number)
+        view.set_status('persistent_line_number', str(current_line_number))
